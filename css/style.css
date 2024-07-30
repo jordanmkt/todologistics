@@ -84,13 +84,16 @@ HEADER
 	display: none;
 	}
 
+	header.clone .logo-2 {
+	display: block;
+	}
+
 	.logo-1, .logo-2 {
 	width: 180px;
 	height: auto;
 	}
-
-	header.clone .logo-2 {
-	display: block;
+	.custom-margin {
+	margin-top: 100px;
 	}
 
 	body.down header.clone {
@@ -160,17 +163,17 @@ SUBHEADER
 ------------------------------ */
 	#subheader {
 	padding-top: 80px;
-	background: url(../img/bg/bg-subheader.jpg) top;
+	background: url(../img/bg/bg-subheader-6.jpg) top;
 	background-size: cover !important;
 	text-align: center;
 	}
 
-	#subheader.page-gallery {
+	#subheader.page-service {
 	background: url(../img/bg/bg-subheader-1.jpg) top;
 	}
 
 	#subheader.page-about {
-	background: url(../img/bg/bg-subheader-6.jpg) top;
+	background: url(../img/bg/bg-subheader-2.jpg) top;
 	}
 
 	#subheader.page-news {
@@ -181,21 +184,22 @@ SUBHEADER
 	background: url(../img/bg/bg-subheader-4.jpg) top;
 	}
 	
-	#subheader.page-track {
+	#subheader.page-vichi {
 	background: url(../img/bg/bg-subheader-5.jpg) top;
 	}
 
 	#subheader h1 {
 	color: #fff;
 	}
+
 	.timeline {
-		width: 100%;
-		max-width: 100%; 
-		height: auto;    
-		display: block;  
-		margin: 0 auto; 
+	width: 100%;
+	max-width: 100%; 
+	height: auto;    
+	display: block;  
+	margin: 0 auto; 
 	}	
-	
+
 	#subheader h1 span {
 	display: block;
 	font-family: "Montserrat";
@@ -1209,7 +1213,7 @@ ELEMENTS
 	}
 
 	blockquote span {
-	font-family: "Open Sans", Arial;
+	font-family: "Montserrat", Arial;
 	display: block;
 	}
 
@@ -1659,17 +1663,17 @@ ELEMENTS
 	clear: both;
 	height: 30px;
 	}
-	.custom-margin {
-	margin-top: 100px;
-	}
-	.arrowicon {
-	width: 200px;
-	height: auto;
-	}
 	.divider-double {
 	clear: both;
 	height: 60px;
 	}
+
+	.arrowicon {
+	width: 50vw; /* Chiều rộng bằng 50% của chiều rộng viewport */
+	height: auto; /* Đảm bảo giữ tỷ lệ aspect ratio */
+	max-width: 200px; /* Đặt giới hạn tối đa cho chiều rộng */
+	}
+	
 	.divider-line {
 	display: block;
 	clear: both;
@@ -3187,7 +3191,7 @@ background: url('../img/bg/bg_service_details_3.jpg');
 }
 
 #section-intro {
-background: url('../img/bg/bg_4.jpg') #303a43; background-size:cover;
+background: url('../img/BANNER.jpg') #303a43; background-size:cover;
 }
 
 #section-intro-2{
@@ -3751,7 +3755,7 @@ width: 100%;
 height: 100%;
 position: absolute;
 z-index: 10;
-font-family: "Open Sans";
+font-family: "Montserrat";
 top: 30%;
 }
 
